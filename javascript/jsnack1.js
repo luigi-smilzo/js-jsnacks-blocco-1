@@ -5,7 +5,16 @@
  */
 
 var word1 = prompt('Inserisci la prima parola').toLowerCase().trim();
+
+while (word1 == '') {
+    var word1 = prompt('Inserisci almeno un carattere').toLowerCase().trim();
+}
+
 var word2 = prompt('Inserisci la seconda parola').toLowerCase().trim();
+
+while (word2 == '') {
+    var word2 = prompt('Inserisci almeno un carattere').toLowerCase().trim();
+}
 
 console.log(checkLength(word1, word2));
 
